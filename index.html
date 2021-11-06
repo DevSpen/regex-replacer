@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <h1><strong>Regex Text Replacer</strong></h1>
+      <p><em>Use regex to replace arguments within text.</em></p>
+      <hr />
+      <div id="replacer">
+        <form>
+          <p>
+            Regex<br />
+            <small>
+              Note: You should not include regex flags. / at the start and end
+              of regex is optional.
+            </small>
+          </p>
+          <p><input id="regex" type="text" placeholder="/this|or|that/" /></p>
+
+          <p>Regex Flags</p>
+          <p>
+            <details>
+              <summary>What's this?</summary>
+              <h3>What are regex flags?</h3>
+              <ul>
+                <li>
+                  <code>g</code> - Replaces all matches, stands for 'global'.
+                  <em
+                    >(used by default for this tool, if no custom flag is
+                    provided)</em
+                  >
+                </li>
+                <li>
+                  <code>gi</code> - Replaces all matches, doesn't matter if it's
+                  lower or upper case. Stands for 'global insensitive'.
+                </li>
+                <li>
+                  <code>i</code> - Replaces the first match only, doesn't matter
+                  if it's lower or upper case. Stands for 'insensitive'.
+                </li>
+                <li>
+                  <code>m</code> - Multiline search, stands for 'multiline'.
+                </li>
+                <li>
+                  <code>none</code> - No flags. Will only replace the first
+                  match.
+                </li>
+              </ul>
+            </details>
+          </p>
+          <p>
+            <select id="flags">
+              <option disabled selected value="g">
+                Select a regex flag...
+              </option>
+              <option value="g">g</option>
+              <option value="gi">gi</option>
+              <option value="i">i</option>
+              <option value="m">m</option>
+              <option value="">none</option>
+            </select>
+          </p>
+
+          <p>Text</p>
+          <p><input id="text" type="text" placeholder="Hello World!" /></p>
+
+          <p>Replacer</p>
+          <p>
+            <input
+              id="replace"
+              type="text"
+              placeholder="Text to replace 'regex' matches with within 'text'."
+            />
+          </p>
+        </form>
+
+        <button type="button" id="Replace" onclick="replaceThis()">
+          Replace!
+        </button>
+      </div>
+      <div id="new"></div>
+    </div>
+  </body>
+</html>
+<script type="text/javascript" src="script.js"></script>
+<footer>
+  Made With ❤️ |
+  <a href="https://github.com/DevSpen/regex-replacer">View Source</a>
+</footer>
