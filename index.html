@@ -17,7 +17,15 @@
               of regex is optional.
             </small>
           </p>
-          <p><input id="regex" type="text" placeholder="/this|or|that/" /></p>
+          <p>
+            <textarea
+              id="regex"
+              name="regex"
+              placeholder="/this|or|that/"
+              rows="1"
+              cols="50"
+            ></textarea>
+          </p>
 
           <p>Regex Flags</p>
           <p>
@@ -64,15 +72,25 @@
           </p>
 
           <p>Text</p>
-          <p><input id="text" type="text" placeholder="Hello World!" /></p>
+          <p>
+            <textarea
+              id="text"
+              name="text"
+              placeholder="Some text"
+              rows="1"
+              cols="50"
+            ></textarea>
+          </p>
 
           <p>Replacer</p>
           <p>
-            <input
+            <textarea
               id="replace"
-              type="text"
-              placeholder="Text to replace 'regex' matches with within 'text'."
-            />
+              name="replacer"
+              placeholder="Hello World!"
+              rows="1"
+              cols="50"
+            ></textarea>
           </p>
         </form>
 

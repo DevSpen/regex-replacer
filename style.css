@@ -11,7 +11,7 @@ h1 {
   color: #a4aeff;
   text-align: center;
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: normal;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -81,11 +81,11 @@ small {
   text-align: center;
 }
 
-a:link {
+a:link, a:clicked {
   color: lightskyblue;
 }
 
-a:hover {
+a:hover, a:active {
   color: lightblue;
 }
 
