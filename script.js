@@ -16,7 +16,14 @@ function replaceThis() {
 	} else {
 		const resultDiv = document.getElementById("new")
 		const result = document.createElement("p")
-		resultDiv.appendChild(result)
-		result.innerHTML = "<strong>Result</strong> <br/>" + "<code>" + output + "</code>"
+		const b = document.createElement("strong");
+		const br = document.createElement("br");
+
+		b.innerText = "Result";
+		result.innerText = output;
+
+		resultDiv.appendChild(b);
+		resultDiv.appendChild(br);
+		resultDiv.appendChild(result);
 	}
 }
